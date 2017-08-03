@@ -1,0 +1,6 @@
+{
+  "posts": { "foo": { "message": "hello" } },
+  "other": "foo",
+  "baz": [1, 2, 3],
+  "food": { "steal": { "healthy": true } }
+}
