@@ -1,6 +1,6 @@
 {
   "name": "apit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JSON/Object to REST API with zero effort",
   "license": "MIT",
   "repository": {
