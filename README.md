@@ -50,6 +50,7 @@
   <li><a href="#about">About</a></li>
   <li><a href="#install">Install</a></li>
   <li><a href="#usage">Usage</a></li>
+  <li><a href="#caveats">Caveats</a></li>
   <li><a href="#contribute">Contribute</a></li>
   <li><a href="#license">License</a></li>
 </details>
@@ -119,6 +120,10 @@ If you install the module globally, you can also use it with a `json` file or mo
 apit --file=example.json
 # {"pid":56017,"hostname":"Tiaan-FF-Mac.local","name":"brewski","level":30,"time":1501776268494,"msg":"Server listening at http://localhost:8000","v":1}
 ```
+
+## Caveats
+
+Currently only `GET` requests are supported.
 
 ## Contributing
 
