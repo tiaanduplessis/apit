@@ -58,6 +58,8 @@
 
 ## About
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/apit.svg)](https://greenkeeper.io/)
+
 The package takes `json` or plain `object` and turns it into a RESTful API server running on a given port (defaults to `8000`).
 
 
