@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "body-parser": "^1.17.2",
-    "brewski": "^1.1.0",
+    "brewski": "^1.1.2",
     "cors": "^2.8.4",
     "get-them-args": "^1.3.0",
     "helmet": "^3.8.1",
