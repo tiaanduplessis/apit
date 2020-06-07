@@ -363,15 +363,15 @@ braces@^1.8.2:
     preserve "^0.2.0"
     repeat-element "^1.1.2"
 
-brewski@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/brewski/-/brewski-1.1.0.tgz#16f9c8fc9127989f9ae32c67a7c536bdfcc1eebb"
+brewski@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/brewski/-/brewski-1.1.2.tgz#127ccd464a3ecffc1259c4d5fa7a6f41dfe320f1"
+  integrity sha512-UrDFmMnMl2M5MUme1Z2mKy2uc+mkLtXstmlDBXOdWFla3QKZIgp9n48URAAlFDV/2I85ce4MBou9FeDipGlfdg==
   dependencies:
+    enhance-res "^1.0.0"
     envobj "~1.0.4"
-    fast-safe-stringify "~1.2.0"
-    find-my-way "~1.3.2"
-    isstream "^0.1.2"
-    middie "^1.0.0"
+    find-my-way "~1.6.2"
+    middie "^2.0.0"
     pino "~4.7.1"
     qs "~6.5.0"
 
@@ -744,6 +744,14 @@ end-of-stream@^1.1.0:
   dependencies:
     once "^1.4.0"
 
+enhance-res@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/enhance-res/-/enhance-res-1.0.0.tgz#72e50435d2ae689b277c12beca242a9f4b303164"
+  integrity sha1-cuUENdKuaJsnfBK+yiQqn0swMWQ=
+  dependencies:
+    fast-safe-stringify "^1.2.0"
+    is-stream "^1.1.0"
+
 envobj@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/envobj/-/envobj-1.0.4.tgz#827b5858ddcfc1453276eb92d82d1d9602395983"
@@ -985,9 +993,14 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
-fast-safe-stringify@^1.0.8, fast-safe-stringify@^1.1.11, fast-safe-stringify@~1.2.0:
+fast-safe-stringify@^1.0.8, fast-safe-stringify@^1.1.11:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-1.2.0.tgz#ebd42666fd18fe4f2ba4f0d295065f3f85cade96"
+
+fast-safe-stringify@^1.2.0:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-1.2.3.tgz#9fe22c37fb2f7f86f06b8f004377dbf8f1ee7bc1"
+  integrity sha512-QJYT/i0QYoiZBQ71ivxdyTqkwKkQ0oxACXHYxH2zYHJEgzi2LsbjgvtzTbLi1SZcF190Db2YP7I7eTsU2egOlw==
 
 fb-watchman@^1.8.0:
   version "1.9.2"
@@ -1048,9 +1061,10 @@ finalhandler@1.0.3:
     statuses "~1.3.1"
     unpipe "~1.0.0"
 
-find-my-way@~1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/find-my-way/-/find-my-way-1.3.2.tgz#3df7aa679f785ba59cb613ae22decdefcfe5d3e5"
+find-my-way@~1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/find-my-way/-/find-my-way-1.6.2.tgz#784299ec918202b9468e6e5bbd692699bf280eeb"
+  integrity sha1-eEKZ7JGCArlGjm5bvWkmmb8oDus=
 
 find-up@^1.0.0:
   version "1.1.2"
@@ -1516,6 +1530,11 @@ is-resolvable@^1.0.0:
   dependencies:
     tryit "^1.0.1"
 
+is-stream@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
+  integrity sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
+
 is-typedarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-typedarray/-/is-typedarray-1.0.0.tgz#e479c80858df0c1b11ddda6940f96011fcda4a9a"
@@ -1538,7 +1557,7 @@ isobject@^2.0.0:
   dependencies:
     isarray "1.0.0"
 
-isstream@^0.1.2, isstream@~0.1.2:
+isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
@@ -2065,11 +2084,13 @@ micromatch@^2.1.5, micromatch@^2.3.11:
     parse-glob "^3.0.4"
     regex-cache "^0.4.2"
 
-middie@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/middie/-/middie-1.0.0.tgz#556d9f570bd02aadd444d89951768258de2bb3cf"
+middie@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/middie/-/middie-2.1.1.tgz#4b79c0fe78b243c4e98ae59065426b8aa8ede588"
+  integrity sha512-e8paYzisygG1Yc0xObWqw5r9tdkYOOpNdOZ69H6QCVz6XXX/5z0vt9gd9O0JCezxmFEEh0xmr8YZLrgNPEhKRw==
   dependencies:
-    reusify "^1.0.1"
+    path-to-regexp "^2.0.0"
+    reusify "^1.0.2"
 
 mime-db@~1.29.0:
   version "1.29.0"
@@ -2296,6 +2317,11 @@ path-is-inside@^1.0.1:
 path-parse@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.5.tgz#3c1adf871ea9cd6c9431b6ea2bd74a0ff055c4c1"
+
+path-to-regexp@^2.0.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.4.0.tgz#35ce7f333d5616f1c1e1bfe266c3aba2e5b2e704"
+  integrity sha512-G6zHoVqC6GGTQkZwF4lkuEyMbVOjoBKAEybQUypI1WTkqinCOrq2x6U2+phkJ1XsEMTy4LjtwPI7HW+NVrRR2w==
 
 path-type@^1.0.0:
   version "1.1.0"
@@ -2605,9 +2631,10 @@ restore-cursor@^1.0.1:
     exit-hook "^1.0.0"
     onetime "^1.0.0"
 
-reusify@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.2.tgz#e3ca4a613e64daac35d40ff34819e72776bf5d85"
+reusify@^1.0.2:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
+  integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
 right-align@^0.1.1:
   version "0.1.3"
