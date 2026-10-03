@@ -129,6 +129,17 @@ Currently only `GET` requests are supported.
 
 Contributions are welcome!
 
+Run the tests without install hooks or the legacy auto-formatting `pretest` hook:
+
+```sh
+yarn install --frozen-lockfile --ignore-scripts
+npm --ignore-scripts test -- --runInBand --env=node
+```
+
+The tests exercise the real CORS middleware in memory and stub the server's
+registration/listen interface, so they do not open a network port. They cover
+origin headers, preflight options, middleware errors and existing API routes.
+
 1. Fork it.
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
