@@ -121,6 +121,9 @@ apit --file=example.json
 # {"pid":56017,"hostname":"Tiaan-FF-Mac.local","name":"brewski","level":30,"time":1501776268494,"msg":"Server listening at http://localhost:8000","v":1}
 ```
 
+The CLI requires `--file`. If it is missing or empty, it prints
+`No file name provided` and exits with status 1.
+
 ## Caveats
 
 Currently only `GET` requests are supported.
@@ -135,6 +138,16 @@ Run the tests without install hooks or the legacy auto-formatting `pretest` hook
 yarn install --frozen-lockfile --ignore-scripts
 npm --ignore-scripts test -- --runInBand --env=node
 ```
+
+The CLI regression suite can also run directly with Node and the installed
+argument parser:
+
+```sh
+npm run test:cli
+```
+
+It uses owned temporary files and replaces the server entrypoint, so no server
+or middleware dependencies are executed.
 
 The tests exercise the real CORS middleware in memory and stub the server's
 registration/listen interface, so they do not open a network port. They cover

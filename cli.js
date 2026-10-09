@@ -12,6 +12,8 @@ function init() {
 
   if (!file) {
     console.error('No file name provided')
+    process.exitCode = 1
+    return
   }
 
   let filePath = path.resolve(file)

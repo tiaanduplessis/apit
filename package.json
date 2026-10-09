@@ -21,7 +21,8 @@
     "format:fix": "npm run format -- --fix",
     "start": "npm run test",
     "precommit": "npm test",
-    "pretest": "npm run format:fix"
+    "pretest": "npm run format:fix",
+    "test:cli": "node cli.test.js"
   },
   "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
   "devDependencies": {
@@ -33,7 +34,7 @@
     "body-parser": "^1.17.2",
     "brewski": "^1.1.0",
     "cors": "^2.8.6",
-    "get-them-args": "^1.3.0",
+    "get-them-args": "^1.3.2",
     "helmet": "^3.8.1",
     "obj-to-routes": "^1.0.0"
   }
